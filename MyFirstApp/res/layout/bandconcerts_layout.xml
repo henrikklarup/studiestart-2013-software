@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+	    android:orientation="horizontal"
+	    android:id="@+id/ConcertList"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="5sp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<Button android:id="@+id/back_button"
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:text="@string/BackButton"
+		    android:layout_weight="1"></Button>
+	</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/listlist"
+        android:layout_above="@+id/ConcertList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+			<TextView
+		    android:id="@+id/textbox1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="40sp" >
+			</TextView>
+			
+			<View
+			  android:layout_width="fill_parent"
+			  android:layout_height="5sp"
+			  android:background="@android:color/black">
+			</View>
+	       	<ListView android:id="@android:id/list"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:drawSelectorOnTop="false" ></ListView>
+	    </LinearLayout>
+</RelativeLayout>
