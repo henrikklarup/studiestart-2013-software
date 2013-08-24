@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout 
+    android:orientation="horizontal"
+    android:id="@+id/ConcertList"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="5sp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+	<Button android:id="@+id/back_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/BackButton"
+	    android:layout_weight="1"></Button>
+	 <Button android:id="@+id/rute_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/Rute"
+	    android:layout_weight="1"></Button>
+</LinearLayout>
+    
+    
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/ConcertList">
+	<TextView
+	    android:id="@+id/textbox1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text = "@string/bandId"
+	    android:textSize="40sp" >
+	</TextView>
+	
+	<View
+	  android:layout_width="fill_parent"
+	  android:layout_height="5sp"
+	  android:background="@android:color/black">
+	</View>
+	
+	<ListView android:id="@android:id/list"
+	   	    android:layout_width="fill_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:drawSelectorOnTop="false"
+	   	    android:divider="@android:color/black"
+	   	    android:dividerHeight="5sp"/>
+</LinearLayout>
+
+</RelativeLayout>

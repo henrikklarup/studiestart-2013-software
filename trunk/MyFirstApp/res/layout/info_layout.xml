@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/ConcertList">
+	<TextView
+	    android:id="@+id/textbox1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="40sp" >
+	</TextView>
+	
+	<View
+	  android:layout_width="fill_parent"
+	  android:layout_height="5sp"
+	  android:background="@android:color/black">
+	</View>
+	
+	<TextView
+	    android:id="@+id/textbox2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    </TextView>
+	<TextView
+	    android:id="@+id/textbox3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    </TextView>
+	<TextView
+	    android:id="@+id/textbox4"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	</TextView>
+</LinearLayout>
+
+</RelativeLayout>
